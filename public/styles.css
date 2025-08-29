@@ -1,0 +1,187 @@
+:root{
+  --white: white;
+  --center: center;
+  --flexBox: flex;
+  --flexColumn: column;
+  --tradeBtn: rgb(11, 155, 43);
+  --bookBtn: rgb(74, 112, 238);
+  --tradeBtnHover: rgb(5, 124, 31);
+  --bookBtnHover: rgb(30, 65, 179);
+  --fivepx: 5px;
+  --eightpx: 8px;
+  --tenpx: 10px;
+  --fifteenpx: 15px;
+  --eighteenpx: 18px;
+  --twentypx: 20px;
+}
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: var(--center);
+}
+button{
+  color: var(--white);
+  cursor: pointer;
+  border: 0;
+}
+#open-btn{
+  background-color: rgb(31, 130, 216);
+  color: var(--white);
+  padding: 12px;
+  border-radius: var(--tenpx);
+  font-size: var(--eighteenpx);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: var(--flexBox);
+  justify-content: var(--center);
+  width: 150px;
+  margin: auto;
+}
+#open-btn:hover{
+  background-color: rgb(13, 94, 165);
+}
+header{
+  display: var(--flexBox);
+  align-items: var(--center);
+  justify-content: space-between;
+  background-color: lightgray;
+  padding: 0px var(--eightpx);
+  margin: var(--tenpx);
+}
+#user-profile{
+  float: right;
+}
+header nav{
+  float: right;
+  display: flex;
+  gap: 7px;
+}
+header nav button{
+  background-color: #808080;
+  border-radius: var(--fivepx);
+}
+header nav button:hover{
+  background-color: #5f5f5f;
+}
+#book-trade-btn button{
+  font-size: var(--twentypx);
+  padding: var(--fifteenpx);
+  width: 100px;
+  border-radius: var(--twentypx);
+}
+#book-trade-btn button:focus{
+  box-shadow: 0 3px 0 1px inset #464646;
+}
+#books-btn{
+  background-color: rgb(74, 112, 238);
+}
+#books-btn:hover{
+  background-color: rgb(30, 65, 179);
+}
+#trades-btn{
+  background-color: rgb(11, 155, 43);
+}
+#trades-btn:hover{
+  background-color: rgb(5, 124, 31);
+}
+form{
+  display: var(--flexBox);
+  justify-content: var(--center);
+  flex-direction: var(--flexColumn);
+  gap: var(--tenpx);
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: var(--tenpx);
+  width: 30%;
+  padding: var(--twentypx);
+  box-shadow: 2px 2px 4px 4px inset #cacaca, -3px -3px var(--fivepx) var(--fivepx) inset #403f3f;
+}
+form input, button{
+  padding: var(--tenpx);
+}
+form textarea{
+  padding: var(--fivepx);
+}
+form button{
+  font-size: var(--eighteenpx);
+  font-weight: 600;
+  border-radius: 7px;
+}
+#login-form-content button{
+  background-color: #1e73b0;
+}
+#login-form-content button:hover{
+  background-color: #125687;
+}
+#signup-form-content button{
+  background-color: #9c1ed6;
+}
+#signup-form-content button:hover{
+  background-color: #6b0e96;
+}
+#books-list, #trades-list{
+  display: var(--flexBox);
+  justify-content: var(--center);
+  flex-wrap: wrap;
+}
+#books-list .book{
+  background-color: #a6c0f8;
+}
+#books-section #add-book-btn{
+  display: block;
+  margin: auto;
+  width: 125px;
+  margin-bottom: var(--twentypx);
+  padding: var(--tenpx);
+  font-size: var(--eighteenpx);
+  font-weight: bold;
+  border-radius: var(--tenpx);
+  background-color: var(--bookBtn);
+}
+#books-section #add-book-btn:hover{
+  background-color: var(--bookBtnHover);
+}
+#add-book-form button{
+  background-color: var(--bookBtn);
+}
+#add-book-form button:hover{
+  background-color: var(--bookBtnHover);
+}
+#books-list .book .trade-btn{
+  background-color: var(--tradeBtn);
+  border-radius: var(--tenpx);
+  padding: var(--eightpx);
+  font-size: var(--fifteenpx);
+  font-weight: bold;
+}
+#books-list .book .trade-btn:hover{
+  background-color: var(--tradeBtnHover);
+}
+#books-list .book, #trades-list .trade{
+  width: 300px;
+  margin: 4px;
+  padding: var(--fifteenpx);
+}
+#trades-list .trade{
+  background-color: #74f7af;
+}
+#trades-list .trade .accept-btn, #trades-list .trade .decline-btn{
+  padding: var(--eightpx);
+  font-size: var(--fifteenpx);
+  font-weight: bold;
+  font-size: 16px;
+  padding: var(--eightpx);
+  border-radius: var(--fivepx);
+}
+#trades-list .trade .accept-btn{
+  background-color: rgb(144, 35, 245);
+}
+#trades-list .trade .accept-btn:hover{
+  background-color: rgb(109, 11, 201);
+}
+#trades-list .trade .decline-btn{
+  background-color: rgb(228, 9, 9);
+}
+#trades-list .trade .decline-btn:hover{
+  background-color: rgb(179, 3, 3);
+}
